@@ -1,9 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MyH1 from "../components/MyH1.astro";
-import srcImage from "../assets/fishing-near-beaverton-oregon.webp";
+import srcImage from "../assets/fishing-near-beaverton-oregon.png";
 import { Image } from "astro:assets";
-import Link from "../components/Link.astro";
 ---
 <Layout 
 title="Fishing near Beaverton, Oregon"
@@ -13,7 +12,7 @@ type="website"
 site_name="Oregon Fishing Forum"
 ogimage={srcImage.src}
 >
-    <center>
+    <div class="text-center">
 			<MyH1 text="Fishing near Beaverton, Oregon" />
 			<p class="mb-4">Discover the top places for fishing near Beaverton, Oregon, in this 2025 guide. Learn about 
 				rivers, lakes, gear tips, licenses, and more.</p>
@@ -21,22 +20,26 @@ ogimage={srcImage.src}
 			<Image
 				src={srcImage}
 				alt="Fishing near Beaverton, Oregon"
+                width={1344}
+                height={768}
 				loading={"eager"}
 				fetchpriority={"high"}
+                layout='constrained'
+                class="rounded-xl shadow mx-auto"
 				/>
 				<br>
-			</center>
+    </div>
 
 
 <h2>
-    <strong>Introduction: Why Beaverton Is a Great Spot for Local Anglers</strong>
+    Introduction: Why Beaverton Is a Great Spot for Local Anglers
 </h2>
 <p>
     Beaverton, Oregon, located just west of Portland, offers an impressive variety of <strong>fishing opportunities close to home</strong>. From well-stocked urban ponds to scenic riverbanks, Beaverton is a convenient launch point for anglers seeking trout, bass, or panfish without driving for hours. Whether you're teaching kids to fish, sneaking in a quick lunch-hour cast, or planning a weekend outing, Beaverton’s fishing scene is ideal for all levels of experience.
 </p>
-<h2>
-    <strong>What Species Can You Catch Near Beaverton?</strong>
-</h2>
+<h3>
+    What Species Can You Catch Near Beaverton?
+</h3>
 <p>
     The waters around Beaverton are home to a variety of fish:
 </p>
@@ -58,43 +61,43 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Best Urban Lakes and Ponds for Fishing in Beaverton</strong>
+    Best Urban Lakes and Ponds for Fishing in Beaverton
 </h2>
 <h3>
-    <strong>Commonwealth Lake Park</strong>
+    Commonwealth Lake Park
 </h3>
 <p>
     Located in the Cedar Hills area, this well-maintained lake is regularly stocked with <strong>rainbow trout</strong> and also holds <strong>bass, bluegill, and crappie</strong>. It features a paved path, fishing platforms, and easy access for families.
 </p>
 <h3>
-    <strong>Bethany Lake</strong>
+    Bethany Lake
 </h3>
 <p>
     Just north of Beaverton, this small pond is a local favorite. <strong>Trout are stocked several times a year</strong>, and you’ll also find panfish and the occasional bass. A paved trail and boardwalk make it wheelchair-friendly.
 </p>
 <h3>
-    <strong>Progress Lake</strong>
+    Progress Lake
 </h3>
 <p>
     Near Washington Square Mall, this small pond is stocked with trout and is a peaceful urban hideaway. Best fished in spring and fall after ODFW stocking events.
 </p>
 <h2>
-    <strong>Top Rivers Near Beaverton for Multi-Species Fishing</strong>
+    Top Rivers Near Beaverton for Multi-Species Fishing
 </h2>
 <h3>
-    <strong>Tualatin River</strong>
+    Tualatin River
 </h3>
 <p>
     Flowing just south of Beaverton, the Tualatin is a <strong>warmwater river</strong> loaded with <strong>catfish, bass, and panfish</strong>. Kayak fishing is popular here, and shore access is available near Rood Bridge Park and Cook Park in Tigard.
 </p>
 <h3>
-    <strong>Willamette River Access</strong>
+    Willamette River Access
 </h3>
 <p>
     Within a 30-minute drive, anglers can reach the <strong>Willamette River</strong> near Wilsonville or Newberg. This stretch offers <strong>smallmouth bass</strong>, seasonal <strong>spring Chinook salmon</strong>, and even <strong>sturgeon</strong> for those with the gear.
 </p>
 <h2>
-    <strong>Fishing Seasons Around Beaverton</strong>
+    Fishing Seasons Around Beaverton
 </h2>
 <figure class="table">
     <table>
@@ -148,7 +151,7 @@ ogimage={srcImage.src}
     &nbsp;
 </p>
 <h2>
-    <strong>Popular Fishing Techniques in Local Waters</strong>
+    Popular Fishing Techniques in Local Waters
 </h2>
 <ul>
     <li>
@@ -165,7 +168,7 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Family-Friendly Fishing Tips and Locations</strong>
+    Family-Friendly Fishing Tips and Locations
 </h2>
 <p>
     Easy, fun places for kids and new anglers:
@@ -193,7 +196,7 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Where to Buy Bait and Gear in Beaverton</strong>
+    Where to Buy Bait and Gear in Beaverton
 </h2>
 <ul>
     <li>
@@ -207,7 +210,7 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Oregon Fishing License and Regulation Summary</strong>
+    Oregon Fishing License and Regulation Summary
 </h2>
 <ul>
     <li>
@@ -227,7 +230,7 @@ ogimage={srcImage.src}
     Always review the latest rules at myodfw.com.
 </p>
 <h2>
-    <strong>Fishing Events and Classes Near Beaverton</strong>
+    Fishing Events and Classes Near Beaverton
 </h2>
 <ul>
     <li>
@@ -268,7 +271,7 @@ ogimage={srcImage.src}
     No—an ultralight spinning rod, some bait, and a bobber are enough to get started.
 </p>
 <h2>
-    <strong>Conclusion: Discover the Joy of Fishing in Beaverton</strong>
+    Conclusion: Discover the Joy of Fishing in Beaverton
 </h2>
 <p>
     From stocked trout ponds to kayak adventures on the Tualatin River, <strong>fishing near Beaverton, Oregon</strong> is convenient, family-friendly, and full of surprises. Whether you're casting a line after work or spending a weekend teaching the kids to fish, the local waters offer calm, beauty, and a chance to unwind—right in your backyard.
