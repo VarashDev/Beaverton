@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/bass-fishing-near-beaverton-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Bass Fishing near Beaverton, Oregon"
@@ -222,6 +223,9 @@ ogimage={srcImage.src}
 <p>
     Popular for kids and beginners, this spot has decent bass during the warmer months—try under the bridge or near the reeds.
 </p>
+
+<p>Read more about <Link href="/bass/best-spots/" text="Best bass fishing spots near Beaverton, Oregon" /></p>
+
 <h2>
     Bass Fishing Regulations in Oregon
 </h2>

@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/steelhead-fishing-near-beaverton-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Steelhead Fishing near Beaverton, Oregon"
@@ -184,6 +185,9 @@ ogimage={srcImage.src}
 <p>
     Near the coast but still doable for a day trip. These rivers shine in late summer and early fall.
 </p>
+
+<p>Read more about <Link href="/steelhead/best-spots/" text="Best steelhead fishing spots near Beaverton, Oregon" /></p>
+
 <h2>
     Fishing Regulations and License Requirements
 </h2>

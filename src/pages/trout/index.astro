@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/trout-fishing-near-beaverton-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Trout Fishing near Beaverton, Oregon"
@@ -200,6 +201,9 @@ ogimage={srcImage.src}
 <p>
     Great for after-work or weekend fishing trips. These urban lakes are stocked with trout multiple times per year and offer simple access for anglers of all levels.
 </p>
+
+<p>Read more about <Link href="/trout/best-spots/" text="Best trout fishing spots near Beaverton, Oregon" /></p>
+
 <h2>
     Urban Trout Fishing Opportunities
 </h2>
